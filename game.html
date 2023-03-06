@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Игра</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#297287">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+</head>
+
+<body class="game">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="./index.html" class="header__logo icon-song-bird-logo"></a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="./game.html" class="menu__link game-link">Игра</a></li>
+								<li class="menu__item"><a href="./gallery.html" class="menu__link gallery-link">Галерея</a></li>
+								<li class="menu__item"><a href="./achievements.html" class="menu__link achievements-link">Достижения</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<div class="header__language-menu lang-menu">
+							<div class="header__language selected-lang language-russian" title="Сменить язык">
+							</div>
+							<ul>
+								<li>
+									<button type="button" value="ru" class="header__language-button lang-ru ru">Русский</button>
+								</li>
+								<li>
+									<button type="button" value="en" class="header__language-button lang-en en">English</button>
+								</li>
+							</ul>
+						</div>
+						<button type="button" class="header__audio-switcher icon-sound-on" title="Вкл/выкл эффекты"></button>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__top">
+					<h5 class="main__score">Счет: 0</h5>
+					<button type="button" class="main__button button button-start game-button-start">Новая игра</button>
+				</div>
+				<ul class="main__tabs tabs">
+					<li class="tabs__item tab tab_active tab-name-intro">Разминка</li>
+					<li class="tabs__item tab tab-name-sparrows">Воробьиные</li>
+					<li class="tabs__item tab tab-name-sylvan">Лесные</li>
+					<li class="tabs__item tab tab-name-singing">Певчие</li>
+					<li class="tabs__item tab tab-name-predators">Хищные</li>
+					<li class="tabs__item tab tab-name-marine">Морские</li>
+				</ul>
+				<div class="main__quiz quiz">
+					<img class="quiz__image" alt="bird" src="img/bird.jpg">
+					<div class="quiz__content">
+						<h3 class="quiz__name">*****</h3>
+						<div class="quiz__audio audio" id="audio-player-0">
+							<audio class="quiz__audio-player audio-player" id="" preload="metadata" src="https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC501461-190616_08.13h_koekoek_brabantse%20biesbosch%20jantjesplaat_roep_1%20ex_ad%20m_ter%20plaatse%20zingend_gezien_.mp3">
+								<p>Your browser does not support the <code>audio</code> element.</p>
+							</audio>
+							<div class="quiz__audio-controls audio-controls">
+								<div class="quiz__play-controls play-controls">
+									<button class="quiz__play-button audio-play-button"></button>
+									<div class="quiz__audio-progress audio-progress">
+										<div class="quiz__audio-playtime audio-playtime">00:00</div>
+										<input type="range" min="0" max="100" value="0" class="quiz__progressbar audio-progressbar">
+										<div class="quiz__audio-duration audio-duration">00:00</div>
+									</div>
+								</div>
+								<div class="quiz__volume-controls volume-controls">
+									<button class="quiz__volume-button audio-volume-button icon-sound-on"></button>
+									<input type="range" min="0" max="100" value="100" class="quiz__volumebar audio-volumebar">
+									<button class="quiz__repeat-button audio-repeat-button icon-loop-cancel"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__bird bird">
+					<div class="bird__answers answers">
+						<button class="answers__button">Ворон</button>
+						<button class="answers__button">Журавль</button>
+						<button class="answers__button">Ласточка</button>
+						<button class="answers__button">Козодой</button>
+						<button class="answers__button">Кукушка</button>
+						<button class="answers__button">Синица</button>
+					</div>
+					<div class="bird__content">
+						<div class="bird__body">
+							<div class="bird__header">
+								<img src="" alt="" class="bird__image">
+								<div class="bird__info">
+									<div class="bird__title">
+										<h4 class="bird__name"></h4>
+										<span>/</span>
+										<p class="bird__species"></p>
+									</div>
+									<div class="bird__audio audio" id="audio-player-1">
+										<audio class="bird__audio-player audio-player" id="" preload="metadata" src="" title="">
+											<p>Your browser does not support the <code>audio</code> element.</p>
+										</audio>
+										<div class="bird__audio-controls audio-controls">
+											<div class="bird__play-controls play-controls">
+												<button class="bird__play-button audio-play-button"></button>
+												<div class="bird__audio-progress audio-progress">
+													<div class="bird__audio-playtime audio-playtime">00:00</div>
+													<input type="range" min="0" max="100" value="0" class="bird__progressbar audio-progressbar">
+													<div class="bird__audio-duration audio-duration">00:00</div>
+												</div>
+											</div>
+											<div class="bird__volume-controls volume-controls">
+												<button class="bird__volume-button audio-volume-button icon-sound-on"></button>
+												<input type="range" min="0" max="100" value="100" class="bird__volumebar audio-volumebar">
+												<button class="bird__repeat-button audio-repeat-button icon-loop-cancel"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class="bird__description"></p>
+						</div>
+						<p class="bird__rules game-bird-rules">Послушайте плеер.<br>Выберите птицу из списка.</p>
+					</div>
+				</div>
+				<button class="main__button button-next button_inactive" disabled="">Следующий вопрос</button>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<a href="./index.html" class="footer__logo icon-song-bird-logo">
+					</a>
+					<ul class="footer__links">
+						<li>
+							<a href="./game.html" class="footer__link footer-game-link">Игра</a>
+						</li>
+						<li>
+							<a href="./gallery.html" class="footer__link footer-gallery-link">Галерея</a>
+						</li>
+						<li>
+							<a href="./achievements.html" class="footer__link footer-achievements-link">Достижения</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copy">© 2022 All Rights Reserved</div>
+					<div class="footer__icons">
+						<a href="https://github.com/elian-cheng" target="_blank" class="footer__git-link icon-git">
+						</a>
+						<a href="https://rs.school/js/" target="_blank" class="footer__rs-link icon-rs-school">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
