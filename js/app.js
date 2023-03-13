@@ -999,7 +999,6 @@
     falseSound = new Audio("./files/audio/fail.mp3"),
     getRandomIndex = length => Math.floor(Math.random() * Math.floor(length));
   let secretBird = birdsData[0][getRandomIndex(6)];
-  console.log(secretBird);
   let level = 0,
     isRight = !1,
     falseAnswers = [],
@@ -1043,7 +1042,6 @@
         (answer = ""),
         (isRight = !1),
         (secretBird = birdsData[level + 1][getRandomIndex(6)]),
-        console.log(secretBird),
         level++)
       : level++;
   }
@@ -1145,7 +1143,6 @@
           (falseAnswers = []),
           (isRight = !1),
           (secretBird = birdsData[0][getRandomIndex(6)]),
-          console.log(secretBird),
           setGame();
       }),
       setGame(),
@@ -1494,8 +1491,5 @@
             targetElement.hasAttribute("data-validate") &&
               formValidate.validateInput(targetElement));
         });
-    })({ viewPass: !1, autoHeight: !1 }),
-    console.log(
-      "Score: 270. All features and design implemented according to the requirements."
-    );
+    })({ viewPass: !1, autoHeight: !1 })
 })();
